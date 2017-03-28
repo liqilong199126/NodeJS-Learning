@@ -38,3 +38,19 @@
 - 5xx：服务器端错误
   - 500：服务器发生未知错误；
   - 503：服务器不处理，过段时间；
+ ## 实现异步的方式 ##
+   - callback 回调方式
+
+   - 事件机制（监听+触发）【订阅者|观察者】模式
+
+   - promise：表示一个异步操作的最终结果，以同步的方式来写代码，执行的操作是异步的，但是保证程序的执行顺序是同步的。
+ ## Promise对象的三种状态 ##
+  - 未完成(pending)
+
+  - 已完成(fulfilled)
+
+  - 失败(rejected)
+ ## Promise A 与 A+ 不同点 ##
+  - A+ 规范通过术语 thenable 来区分promise对象
+  - A+ 定义 onFulfilled/onRejected 必须是作为函数来调用，而且调用过程必须是异步的
+  - A+ 严格定义了 then 方法链式调用是 onFulfilled/onRejected 的调用顺序
