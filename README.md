@@ -54,3 +54,12 @@
   - A+ 规范通过术语 thenable 来区分promise对象
   - A+ 定义 onFulfilled/onRejected 必须是作为函数来调用，而且调用过程必须是异步的
   - A+ 严格定义了 then 方法链式调用是 onFulfilled/onRejected 的调用顺序
+  
+ ## Promise then 方法 ##
+  promiseObj.then(onFulfilled, onRejected)
+ 
+  onFulfilled = function(value){
+     return promiseObj2
+  }
+ 
+  onRejected = function(err){}
