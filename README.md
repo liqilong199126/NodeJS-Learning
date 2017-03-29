@@ -62,4 +62,13 @@
      return promiseObj2
   }
  
-  onRejected = function(err){}
+  onRejected = function(err){ }
+ ## Promise 库 ##
+  - bluebird
+  - Q
+  - then.js
+  - es6-promise
+  - ypromise
+  - async
+  - native-promise-only
+  - ...
