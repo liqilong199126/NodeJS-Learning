@@ -57,18 +57,18 @@ function printCourseInfo(course){
 	})
 }
 
-http.get(url,function(res){
+http.get(url, function(res){
 	var html = ''
 
-	res.on('data',function(data){
+	res.on('data', function(data){
 		html += data
 	})
 
-	res.on('end',function(){
+	res.on('end', function(){
 		var courseData = filterChapters(html)
 
 		printCourseInfo(courseData)
 	})
-}).on('error',function(){
+}).on('error', function(){
 	console.log('获取课程数据出错！')
 })
